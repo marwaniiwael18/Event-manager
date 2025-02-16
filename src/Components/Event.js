@@ -1,12 +1,13 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
+import soldoutImg from "../assets/soldout.jpg";
 
 const Event = ({ event, onBook, onLike }) => {
   return (
     <Card style={{ width: "18rem", margin: "10px" }}>
       <Card.Img 
         variant="top" 
-        src={event.img || "placeholder.jpg"} 
+        src={event.nbTickets === 0 ? soldoutImg : event.img || "placeholder.jpg"} 
         style={{ height: "200px", objectFit: "cover" }} 
       />
       <Card.Body>

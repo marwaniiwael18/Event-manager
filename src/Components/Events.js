@@ -3,7 +3,7 @@ import { Row, Col, Alert, Button } from "react-bootstrap";
 import Event from "./Event";
 import concertImg from "../assets/concert.jpg";
 import techImg from "../assets/tech.jpg";
-import soldoutImg from "../assets/soldout.jpg";
+import medinaImg from "../assets/medina.jpg";
 
 const Events = () => {
   const [events, setEvents] = useState([]);
@@ -37,7 +37,7 @@ const Events = () => {
         id: 3,
         name: "Festival de la medina de Tunis",
         description: "Cultural festival in Tunis",
-        img: soldoutImg,
+        img: medinaImg,
         price: 15,
         nbTickets: 0,
         nbParticipants: 34,
